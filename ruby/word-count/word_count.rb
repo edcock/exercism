@@ -13,9 +13,8 @@ class Phrase
     every_word.each_with_object(Hash.new(0)){|word, hash|
       hash[word] = words.count(word)
     }
-
-
   end
+
 end
 
 
