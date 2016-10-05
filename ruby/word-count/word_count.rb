@@ -9,12 +9,10 @@ class Phrase
 	def word_count
 		words 	    = 	@phrase.downcase.scan(/(?!\W)[\w']+(?<!\W)/)
 		every_word 	= 	words.uniq
-		
-    every_word.each_with_object(Hash.new(0)){|word, hash|
-    		hash[word] = words.count(word)
-    	} 
 
-		
+		every_word.each_with_object(Hash.new(0)){|word, hash|
+		  hash[word] = words.count(word)
+    } 		
 	end
 end
 
