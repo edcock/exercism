@@ -8,7 +8,7 @@ class Squares
 
 	def square_of_sum	
 		sums = (0..number).inject(:+)
-		square_of_sum =  sums**2
+		sums**2
 	end
 
 	def sum_of_squares	
